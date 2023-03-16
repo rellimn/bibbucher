@@ -17,7 +17,7 @@ def get_args() -> argparse.Namespace:
     argparser.add_argument("-u", "--user", required=True, type=str)
     argparser.add_argument("-p", "--password", required=True, type=str)
     argparser.add_argument("-i", "--update_interval", default=7, type=int)
-    argparser.add_argument("-b", "--booking_interval", default=7, type=int)
+    argparser.add_argument("-b", "--booking_interval", default=0, type=int)
     argparser.add_argument("-d", "--date", default=date.today(), type=date.fromisoformat)
     argparser.add_argument("-t", "--time", default=datetime.now().time(), type=time.fromisoformat)
 
